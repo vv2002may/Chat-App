@@ -5,7 +5,7 @@ import './Chat.css'
 import Message from '../Message/Message';
 import RSTB  from 'react-scroll-to-bottom'
 
-const ENDPOINT = 'http://localhost:4500/';
+const ENDPOINT = 'https://chat-app-server-teal.vercel.app/';
 
 let socket;
 const Chat = () => {
