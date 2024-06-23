@@ -1,0 +1,87 @@
+body{
+   margin: 0;
+   border: solid;
+   border-color: red;
+   font-family: 'Lato';
+}
+
+@media (max-aspect-ratio: 7/10){
+   
+   .JoinContainer{
+      width: 60% !important;
+   }
+   .JoinContainer >img{
+      width: 20vmax !important;
+   }
+   
+   .JoinContainer > h1{
+      margin-bottom: 3vmax !important;
+      font-size: 5vmax !important;
+   }
+   
+   #JoinInput{
+      width: 70% !important;
+      padding: 1.5vmax !important;
+      font-size: 3vmax !important;
+   }
+   
+   .Joinbtn{
+      width: 15vmax !important;
+      padding: 1.1vmax !important;
+      font-size: 3.5vmax !important;
+   }
+
+   .ChatContainer{
+      width: 100% !important;
+      height: 100% !important;
+   }
+
+   .header{
+      height: 10% !important;
+   }
+
+   .header >h2{
+      font-size: 4vmax !important;
+      margin: 8vw !important;
+   }
+   
+   .header >a{
+      font-size: 3.5vmax !important;
+   }
+
+   .chatBox{
+      height: 80% !important;
+   }
+   .inputBox{
+      height: 10% !important;
+   }
+   
+   #chatInput{
+      padding: 4vmax !important;
+      font-size: 3.8vmax !important;
+   }
+   
+   .sendBtn{
+      width: 25% !important;
+      font-size: 3vmax !important;
+   }
+
+   .messageBox{
+      padding: 1.5vmax !important;
+      margin: 1.5vmax !important;
+      border-radius: 15px !important;
+      font-size: 3.5vmax !important;
+   }
+   
+   .right{
+      float: right;
+      background-color: green;
+      color: white;
+   }
+   
+   .left{
+      float: left;
+      background-color: rgb(227, 227, 22);
+   }
+   
+}

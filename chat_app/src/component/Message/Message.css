@@ -1,0 +1,28 @@
+.messageBox{
+   /* border-style: solid; */
+   border-color: rgb(28, 169, 169);
+   /* background-color: rgb(206, 165, 165); */
+   /* width: 50%; */
+   padding: 1vmax;
+   margin: 1vmax;
+   border-radius: .5vmax;
+   display: inline-block;
+   box-sizing: border-box;
+   clear: both;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 300;
+   font-size: 1.5vmax;
+}
+
+.right{
+   float: right;
+   background-color: green;
+   color: white;
+   text-align: right;
+}
+
+.left{
+   float: left;
+   text-align: left;
+   background-color: rgb(227, 227, 22);
+}
