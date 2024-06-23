@@ -11,7 +11,7 @@ const users = [{}];
 
 app.use(cors());
 app.get('/', (req, res) => {
-   res.send('<h1>its working<h1>');
+   res.send('Server is working.');
 })
 
 const server = http.createServer(app);
