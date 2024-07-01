@@ -16,7 +16,7 @@
 
 .right{
    float: right;
-   background-color: rgb(58, 98, 218);
+   background-color: rgb(120, 122, 126);
    color: white;
    margin-right: 5%;
    text-align: right;
@@ -27,7 +27,7 @@
    text-align: left;
    color: white;
    margin-left: 5%;
-   background-color: rgb(58, 98, 218);
+   background-color: rgb(120, 122, 126);
 }
 .center{
    float:left;

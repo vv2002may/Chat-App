@@ -1,8 +1,11 @@
 body{
    margin: 0;
-   border: solid;
-   border-color: red;
+   /* border: solid; */
+   /* border-color: red; */
    font-family: 'Lato';
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-image: url('./images/background.jpg');
 }
 
 @media (max-aspect-ratio: 7/10){

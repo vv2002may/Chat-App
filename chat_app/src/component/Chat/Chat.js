@@ -4,6 +4,10 @@ import sockerIO from 'socket.io-client'
 import './Chat.css'
 import Message from '../Message/Message';
 import RSTB  from 'react-scroll-to-bottom'
+import { Button, Container, Stack, TextField, Typography,IconButton } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
+
+
 
 const ENDPOINT = 'https://chat-app-bk1y.onrender.com';
 // const ENDPOINT = 'http://localhost:4500/';
@@ -64,29 +68,33 @@ const Chat = () => {
    }, [messages])
    
    
-  return (
-     <div className='ChatPage'>
-        <div className='ChatContainer'>
-           <div className='header'>
-              <h2>CHAT APP</h2>
-              <a href='/'><i class="glyphicon glyphicon-remove"></i></a>
-           </div>
-           <RSTB className='chatBox'>
-              {
-                 messages.map((item, i) =>
-                    <
-                       Message user={item.id === id ? '' : item.user}
-                       message={item.message}
-                       classes={item.id === id ? 'right' : 'left'}
-                    />)
-              }
-           </RSTB>
-           <div className='inputBox'>
-              <input onKeyPress={(e)=>e.key==='Enter'?send():null} type='text' id='chatInput' />
-              <button onClick={send} className='sendBtn'>Send</button>
-           </div>
-        </div>
-    </div>
+   return (
+     <>
+         <div className='ChatPage'>
+            <div className='header'>
+                  <h2>CHAT APP</h2>
+                  <a href='/'><i class="glyphicon glyphicon-remove"></i></a>
+            </div>
+            <div className='ChatContainer'>
+               <RSTB className='chatBox'>
+                  {
+                     messages.map((item, i) =>
+                        <
+                           Message user={item.id === id ? '' : item.user}
+                           message={item.message}
+                           classes={item.id === id ? 'right' : 'left'}
+                        />)
+                  }
+               </RSTB>
+            </div>
+            <div className='inputBox'>
+                  <input onKeyPress={(e)=>e.key==='Enter'?send():null} type='text' id='chatInput' placeholder='Write a message...' />
+                  <button onClick={send} className='sendBtn'>
+                     Send
+                  </button>
+            </div>
+         </div>
+     </>
   )
 }
 

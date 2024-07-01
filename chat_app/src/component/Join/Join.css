@@ -1,5 +1,5 @@
 .JoinPage{
-   background-color: rgb(231, 196, 161);
+   /* background-color: rgb(231, 196, 161); */
    width: 100%;
    height: 100vh;
    display: flex;
@@ -8,72 +8,124 @@
 }
 
 .JoinContainer{
-   border: 2px solid red;
-   border-radius: 15px;
+   /* border: 2px solid red; */
+   /* border-radius: 5vmax; */
    /* height: 50%; */
-   width: 50%;
+   width: 70%;
+   height: 80%;
    display: flex;
-   flex-direction: column;
+   justify-content: space-between;
+   /* flex-direction: column; */
    /* text-align: center; */
    align-items: center;
    box-sizing: border-box;
-   box-shadow: 10px 10px 10px rgba(228, 19, 19, 0.25);
+   box-shadow: 10px 10px 90px rgba(19, 228, 50, .2);
 }
 
-.JoinContainer >img{
-   width: 10vmax;
-   border-style: solid;
-   border-color: rgb(11, 11, 11);
+.JoinContainer>div>img{
+   width: 7vmax;
+   /* border-style: solid; */
+   /* border-color: rgb(11, 11, 11); */
    padding: .1vmax;
-   margin-bottom: -1.5vmax;
+   margin: 1.5vmax;
    box-sizing: border-box;
 }
 
-.JoinContainer > h1{
-   color: red;
+.JC1{
+   /* border: solid; */
+   border-radius: 1vmax;
+   width: 50%;
+   padding-top: 1vmax;
+   background-image: linear-gradient(to bottom,rgb(46, 214, 46),rgb(12, 94, 227));
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* text-align: center; */
+   height: 100%;
+}
+
+.JC1>div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.JC1>div>p{
+   width: 90%;
+   /* border: solid; */
+   font-size: 2vmax;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 200;
+   color: white;
+}
+.JC1>div>img{
+   width: 7vmax;
+   margin-top: 1.5vmax;
+}
+.JC1>div>h2{
+   color: white;
+   font-size: 2vmax;
+}
+.JC2{
+   border-radius: 1vmax;
+   width: 50%;
+   height: 100%;
+   /* border: solid; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   /* background-color: rgba(168, 206, 107, 0.4); */
+}
+
+.JoinContainer >div > h1{
+   color: white;
    font-family: 'Lato';
-   width: 60%;
+   width: fit-content;
    margin-top: 0;
    margin-bottom: 5vmax;
-   font-size: 3.4vmax;
+   font-weight: 400;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 2.5vmax;
    /* border-bottom: .2vmax solid white; */
-   border-radius: 10px;
+   /* border-radius: 10px; */
    /* display: flex; */
    position: relative;
    padding: .3vmax;
    /* margin-left: 6em; */
    text-align: center;
-   border: solid;
+   /* border: solid; */
    box-sizing: border-box;
 }
 
 #JoinInput{
-   width: 30vmax;
+   width: fit-content !important;
    padding: .8vmax;
    /* border-color: red; */
    border-radius: 10px;
    outline: none;
    border: none;
-   margin-top: 1.5vmax;
-   outline: rgb(36, 239, 111);
-   font-size: 1.8vmax;
-   font-family: 'Lato';
-   text-align: center;
-   box-sizing: border-box;
+   /* margin-top: 1.5vmax; */
+   border-bottom: solid;
+   background-color: rgba(20, 134, 235,0);
+   outline: rgb(3, 3, 3);
+   font-size: 1.8vmax !important;
+   text-align: center !important;
+   box-sizing: border-box ;
 }
 
 .Joinbtn{
    width: 8vmax;
-   padding: .1vmax;
-   border-radius: 5px;
+   padding: .1vmax !important;
+   border-radius: 10px;
    /* border-color: red; */
-   margin-top: 1vmax;
+   margin-top: 3.5vmax;
    margin-bottom: 1vmax;
-   outline: rgb(36, 239, 111);
+   /* outline: rgb(36, 239, 111); */
    font-size: 1.8vmax;
-   font-family: 'Lato';
    text-align: center;
-   background-color: rgb(229, 207, 63);
+   background-image: linear-gradient(to right, rgb(233, 97, 181),rgb(214, 82, 82));
    box-sizing: border-box;
    color: white;
    transition: all 0.3s;
@@ -81,5 +133,6 @@
 }
 
 .Joinbtn:hover{
-   background-color: rgb(212, 130, 58);
+   background-image:linear-gradient(to right, rgb(178, 14, 115),rgb(235, 17, 17));
+   color: rgb(228, 230, 78);
 }
