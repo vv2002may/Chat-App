@@ -10,7 +10,7 @@ const ENDPOINT = 'https://chat-app-bk1y.onrender.com';
 
 let socket;
 const Chat = () => {
-
+   // e.preventDefault();
    const [id, setid] = useState("");
    const [messages, setMessages] = useState([])
    const send = () => {
