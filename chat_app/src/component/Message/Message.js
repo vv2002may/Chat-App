@@ -4,9 +4,24 @@ import './Message.css'
 const Message = ({user,message,classes}) => {
    if (user) {
       return (
-         <div className={`messageBox ${classes}`}>
-            {`${user} : ${message}`}
-        </div>
+
+         `${user}` === 'Admin' ?  
+         
+            <div className='messageBox center'>
+               {/* {`${user} : ${message}`} */}
+               {`${message}`}
+            </div>
+            
+            :
+         
+            <div className={`messageBox ${classes}`}>
+               {`${user} : ${message}`}
+            </div>
+
+
+      //    <div className={`messageBox ${classes}`}>
+      //       {`${user} : ${message}`}
+      //   </div>
       )
    }
    else {

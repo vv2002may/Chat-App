@@ -6,6 +6,7 @@ import Message from '../Message/Message';
 import RSTB  from 'react-scroll-to-bottom'
 
 const ENDPOINT = 'https://chat-app-bk1y.onrender.com';
+// const ENDPOINT = 'http://localhost:4500/';
 
 let socket;
 const Chat = () => {
@@ -19,6 +20,7 @@ const Chat = () => {
    }
 
    console.log(messages);
+   
    useEffect(() => {
       socket = sockerIO(ENDPOINT, { transports: ['websocket'] });
 
@@ -28,21 +30,7 @@ const Chat = () => {
       })
      
       socket.emit('joined', { user });
-
-      socket.on('welcome', (data) => {
-         setMessages([...messages, data]);
-         console.log(data.user, data.message);
-      })
-      
-      socket.on('userJoined', (data) => {
-         setMessages([...messages, data]);
-         console.log(data.user, data.message);
-      })
-
-      socket.on('leave', (data) => {
-         setMessages([...messages, data]);
-         console.log(data.user, data.message);
-      })
+            
       return () => {
          socket.disconnect();
          socket.off();
@@ -50,10 +38,25 @@ const Chat = () => {
    }, []);
    
    useEffect(() => {
+      socket.on('welcome', (data) => {
+         setMessages([...messages, data]);
+         console.log(data.user, data.message);
+      });
+
       socket.on('sendMessage', (data) => {
          setMessages([...messages, data]);
          console.log(data.user, data.message, data.id);
-     })
+      });
+
+      socket.on('userJoined', (data) => {
+         setMessages([...messages, data]);
+         console.log(data.user, data.message);
+      });
+
+      socket.on('leave', (data) => {
+         setMessages([...messages, data]);
+         console.log(data.user, data.message);
+      });
    
      return () => {
         socket.off();
@@ -69,7 +72,14 @@ const Chat = () => {
               <a href='/'><i class="glyphicon glyphicon-remove"></i></a>
            </div>
            <RSTB className='chatBox'>
-              {messages.map((item,i)=> <Message user={item.id===id?'' : item.user} message={item.message} classes={item.id===id?'right' : 'left'}/>)}
+              {
+                 messages.map((item, i) =>
+                    <
+                       Message user={item.id === id ? '' : item.user}
+                       message={item.message}
+                       classes={item.id === id ? 'right' : 'left'}
+                    />)
+              }
            </RSTB>
            <div className='inputBox'>
               <input onKeyPress={(e)=>e.key==='Enter'?send():null} type='text' id='chatInput' />

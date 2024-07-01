@@ -3,7 +3,7 @@
    border-color: rgb(28, 169, 169);
    /* background-color: rgb(206, 165, 165); */
    /* width: 50%; */
-   padding: 1vmax;
+   padding: .5vmax;
    margin: 1vmax;
    border-radius: .5vmax;
    display: inline-block;
@@ -16,7 +16,7 @@
 
 .right{
    float: right;
-   background-color: green;
+   background-color: rgb(58, 98, 218);
    color: white;
    text-align: right;
 }
@@ -24,5 +24,15 @@
 .left{
    float: left;
    text-align: left;
-   background-color: rgb(227, 227, 22);
+   color: white;
+   background-color: rgb(58, 98, 218);
+}
+.center{
+   float:left;
+   width: 90%;
+   margin-left: 5%;
+   background-color: rgb(175, 227, 20);
+   color: rgb(20, 18, 18);
+   border: solid;
+   text-align: center;
 }
