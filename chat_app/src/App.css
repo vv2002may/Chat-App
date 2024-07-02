@@ -11,69 +11,89 @@ body{
 @media (max-aspect-ratio: 7/10){
    
    .JoinContainer{
-      width: 60% !important;
+      background-image: linear-gradient(to bottom,rgb(46, 214, 46),rgb(12, 94, 227)) !important;
+      /* border: solid !important; */
+      width: 80% !important;
+      border-radius: 10px !important;
+      justify-content: center !important;
+      flex-direction:column !important;
+      box-shadow: 0px 0px 50px rgba(51, 49, 49,.5) !important;
    }
-   .JoinContainer >img{
+   .JC1{
+      background-image:none !important; 
+      width: 100% !important;
+      height: 100% !important;
+   }
+   .JC1 > img{
       width: 20vmax !important;
    }
-   
-   .JoinContainer > h1{
-      margin-bottom: 3vmax !important;
+   .JC1 > h1{
       font-size: 5vmax !important;
    }
+   .JC1 > div{
+      display: none !important;
+   }
    
+   .JC2{
+      width: 90% !important;
+      /* border: solid !important; */
+      /* margin: 5vmax !important; */
+   }
+
    #JoinInput{
-      width: 70% !important;
+      background-color: aqua !important;
+      /* color: white !important; */
+      width: 80% !important;
+      color: rgb(15, 16, 16) !important;
       padding: 1.5vmax !important;
       font-size: 3vmax !important;
    }
    
    .Joinbtn{
       width: 15vmax !important;
-      padding: 1.1vmax !important;
-      font-size: 3.5vmax !important;
-   }
-
-   .ChatContainer{
-      width: 100% !important;
-      height: 100% !important;
-   }
-
-   .header{
-      height: 10% !important;
-   }
-
-   .header >h2{
-      font-size: 4vmax !important;
-      margin: 8vw !important;
-   }
-   
-   .header >a{
+      padding: 1vmax !important;
       font-size: 3.5vmax !important;
    }
 
    .chatBox{
-      height: 80% !important;
+      width: 100% !important;
+      height: 100% !important;
+      border-radius: 0 !important;
+      display: flex !important;
+      justify-content: center !important;
+      text-align: center !important;
+   }
+
+   .header{
+      display: none !important;
+   }
+
+   .chatBox{
+      height: 100% !important;
    }
    .inputBox{
       height: 10% !important;
+      width: 100% !important;
    }
    
    #chatInput{
-      padding: 4vmax !important;
-      font-size: 3.8vmax !important;
+      padding: 2vmax !important;
+      font-size: 2.5vmax !important;
    }
    
    .sendBtn{
       width: 25% !important;
-      font-size: 3vmax !important;
+      font-size: 3.5vmax !important;
    }
-
+   .ChatContainer{
+      width: 95% !important;
+      height: 85% !important;
+   }
    .messageBox{
       padding: 1.5vmax !important;
       margin: 1.5vmax !important;
       border-radius: 15px !important;
-      font-size: 3.5vmax !important;
+      font-size: 3vmax !important;
    }
    
    .right{
@@ -85,6 +105,17 @@ body{
    .left{
       float: left;
       background-color: rgb(227, 227, 22);
+   }
+
+   .center{
+      float:left;
+      font-size: 2.5vmax !important ;
+      width: 90%;
+      margin-left: 5%;
+      background-color: rgb(175, 227, 20);
+      color: rgb(20, 18, 18);
+      border: solid;
+      text-align: center;
    }
    
 }

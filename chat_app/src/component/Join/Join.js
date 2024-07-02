@@ -27,21 +27,6 @@ const Join = () => {
         </div>
         
         <div className='JC2'>
-          {/* <TextField
-            value={name}
-            onChange={(e) => { setname(e.target.value) }}
-            id="JoinInput"
-            label="Enter Your Name"
-            variant="standard"
-            type='text'
-            /> */}
-
-            {/* <Link onClick={(e) => !name ? e.preventDefault() : null} to='/chat' >
-              <Button onClick={sendUser}  className='Joinbtn' type="submit" variant="contained" color="primary">
-              Log In
-              </Button>
-            </Link> */}
-
           <input
             onChange={(e) => setname(e.target.value)}
             placeholder='Enter Your Name'
