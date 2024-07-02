@@ -12,6 +12,7 @@
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    font-weight: 300;
    font-size: 2vmax;
+   overflow-wrap: break-word;
 }
 
 .right{
@@ -20,6 +21,7 @@
    color: white;
    margin-right: 5%;
    text-align: right;
+   max-width: 60%;
 }
 
 .left{
@@ -28,6 +30,7 @@
    color: white;
    margin-left: 5%;
    background-color: rgb(120, 122, 126);
+   max-width: 60%;
 }
 .center{
    float:left;
